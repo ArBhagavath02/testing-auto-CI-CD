@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#172a22">
+	<meta name="description" content="Thoughtful coffee, made slowly and served warmly at Common Ground Coffee House.">
+	<title>Common Ground Coffee House</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+	<style>
+	</style>
+</head>
+<body>
+	<header class="topbar">
+		<a class="wordmark" href="#home">COMMON GROUND<span>COFFEE HOUSE</span></a>
+		<nav class="nav-links" aria-label="Main navigation">
+			<a href="#coffee">Our coffee</a>
+			<a href="#menu">Menu</a>
+			<a class="nav-visit" href="#visit">Find us</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" id="home" aria-labelledby="hero-title">
+			<div class="hero-content">
+				<p class="eyebrow">GOOD COFFEE. GOOD COMPANY.</p>
+				<h1 id="hero-title">A little room<br>to slow down.</h1>
+				<p class="hero-copy">Thoughtfully sourced beans, familiar faces, and a really good cup waiting just around the corner.</p>
+				<a class="primary-link" href="#menu">See what's brewing <span aria-hidden="true">↘</span></a>
+			</div>
+			<p class="hero-note">Fresh from the grinder, every morning.</p>
+		</section>
+
+		<section class="intro" aria-labelledby="intro-title">
+			<h2 id="intro-title">Coffee made with care, never in a hurry.</h2>
+			<p>We work with small farms, roast in thoughtful batches, and make every drink to order. Come in for your morning ritual, stay for one more conversation.</p>
+		</section>
+
+		<section class="coffee-feature" id="coffee" aria-labelledby="coffee-title">
+			<div class="coffee-photo" role="img" aria-label="Freshly prepared espresso and coffee on a cafe counter"></div>
+			<div class="coffee-copy">
+				<p class="eyebrow">THE HOUSE FAVORITE</p>
+				<h2 id="coffee-title">Maple<br>Oat Flat White</h2>
+				<p>Our double-shot house espresso meets silky oat milk and a little real maple. Smooth, gently sweet, and lovely from the first sip.</p>
+				<div class="price-line"><strong>$5.25</strong><span>8 oz · oat milk included</span></div>
+				<div class="process" aria-label="How we make a Maple Oat Flat White">
+					<p class="process-label">MADE IN FOUR LITTLE STEPS</p>
+					<div class="step-tabs" role="tablist" aria-label="Coffee making steps">
+						<button class="step-tab" id="step-tab-1" type="button" role="tab" aria-selected="true" aria-controls="step-panel" data-step="0">01 Grind</button>
+						<button class="step-tab" id="step-tab-2" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="1" tabindex="-1">02 Pull</button>
+						<button class="step-tab" id="step-tab-3" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="2" tabindex="-1">03 Steam</button>
+						<button class="step-tab" id="step-tab-4" type="button" role="tab" aria-selected="false" aria-controls="step-panel" data-step="3" tabindex="-1">04 Pour</button>
+					</div>
+					<div class="step-panel" id="step-panel" role="tabpanel" aria-labelledby="step-tab-1" aria-live="polite">
+						<h3 id="step-title">Freshly ground, just for you.</h3>
+						<p id="step-description">We grind our house beans fine, right before brewing, to keep every shot full of flavor.</p>
+					</div>
+					<p class="process-count" id="process-count">Step 1 of 4</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu" id="menu" aria-labelledby="menu-title">
+			<div class="menu-head">
+				<div><p class="eyebrow">PICK YOUR PLEASURE</p><h2 id="menu-title">On the menu</h2></div>
+				<p>Good beans, a short ingredient list, and room to make it yours.</p>
+			</div>
+			<div class="menu-list">
+				<article class="menu-item"><div><h3>Maple Oat Flat White</h3><p>Double espresso, oat milk, real maple.</p></div><strong>$5.25</strong></article>
+				<article class="menu-item"><div><h3>Honeycomb Cold Brew</h3><p>Slow-steeped for 18 hours, finished with honey foam.</p></div><strong>$5.75</strong></article>
+				<article class="menu-item"><div><h3>Brown Butter Latte</h3><p>Espresso, steamed milk, and house-made brown butter syrup.</p></div><strong>$5.50</strong></article>
+				<article class="menu-item"><div><h3>Little Batch Pour-over</h3><p>Today’s rotating single origin, brewed by hand.</p></div><strong>$4.75</strong></article>
+			</div>
+			<p class="menu-footnote">Prices in USD. Ask us about dairy-free milk and today’s bakery case.</p>
+		</section>
+
+		<section class="visit" id="visit" aria-labelledby="visit-title">
+			<div><h2 id="visit-title">Your table is waiting.</h2><p>18 Willow Street, Portland, OR<br>Every day, 7 am – 4 pm</p></div>
+			<a href="https://maps.google.com/?q=18+Willow+Street+Portland+OR" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+		</section>
+	</main>
+
+	<footer><p>COMMON GROUND COFFEE HOUSE</p><p>Good coffee brings us together.</p><p>© <span id="year"></span> Common Ground</p></footer>
+
+	<script>
+		const steps = [
+			{ title: "Freshly ground, just for you.", description: "We grind our house beans fine, right before brewing, to keep every shot full of flavor." },
+			{ title: "A balanced double shot.", description: "Hot water pulls a rich, 36-gram espresso with a smooth finish and a little natural sweetness." },
+			{ title: "Silky oat milk, gently warmed.", description: "We steam oat milk until glossy and soft, keeping the texture light enough to let the coffee shine." },
+			{ title: "Maple, espresso, and a careful pour.", description: "A touch of real maple meets the espresso, then we pour in the steamed oat milk and serve it fresh." }
+		];
+		const tabs = [...document.querySelectorAll(".step-tab")];
+		const panel = document.querySelector("#step-panel");
+		const title = document.querySelector("#step-title");
+		const description = document.querySelector("#step-description");
+		const count = document.querySelector("#process-count");
+
+		function selectStep(index, moveFocus = false) {
+			tabs.forEach((tab, tabIndex) => {
+				const selected = tabIndex === index;
+				tab.setAttribute("aria-selected", String(selected));
+				tab.tabIndex = selected ? 0 : -1;
+				if (selected && moveFocus) tab.focus();
+			});
+			title.textContent = steps[index].title;
+			description.textContent = steps[index].description;
+			count.textContent = `Step ${index + 1} of ${steps.length}`;
+			panel.setAttribute("aria-labelledby", tabs[index].id);
+		}
+
+		tabs.forEach((tab, index) => {
+			tab.addEventListener("click", () => selectStep(index));
+			tab.addEventListener("keydown", (event) => {
+				let nextIndex = index;
+				if (event.key === "ArrowRight") nextIndex = (index + 1) % tabs.length;
+				else if (event.key === "ArrowLeft") nextIndex = (index - 1 + tabs.length) % tabs.length;
+				else if (event.key === "Home") nextIndex = 0;
+				else if (event.key === "End") nextIndex = tabs.length - 1;
+				else return;
+				event.preventDefault();
+				selectStep(nextIndex, true);
+			});
+		});
+
+		document.querySelector("#year").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
+
